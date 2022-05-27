@@ -1,0 +1,18 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  TergetRubyVersion: 2.7.2
+  Exclude:
+    - '**/db/**/*'
+    - 'config/**/*'
+    - 'bin/*'
+    - 'config.ru'
+
+Style/Documentation:
+ Enabled: false
+
+
+
+
+
