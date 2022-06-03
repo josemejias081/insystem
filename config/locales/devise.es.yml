@@ -65,6 +65,7 @@ es:
         greeting: "¡Bienvenido %{recipient}!"
         instruction: 'Usted puede confirmar el correo electrónico de su cuenta a través de este enlace:'
         subject: Instrucciones de confirmación
+        welcome: Bienvenido
       email_changed:
         greeting: "¡Hola %{recipient}! "
         message: Estamos contactando contigo para notificarte que tu email ha sido cambiado a %{email}.

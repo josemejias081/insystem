@@ -5,17 +5,13 @@
 # below each fixture, per the syntax in the comments below
 #
 
-
-
+#column: value
 one:
   name: "User"
   email: "oneuser@gmail.com"
   encrypted_password: <%= encrypted_password %>
-# column: value
-#
+
 Jose: 
   name: "Jose"
   email: "josemejias@gmail.com"
   encrypted_password: "foobar"
-
-# column: value

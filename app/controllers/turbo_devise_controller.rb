@@ -4,12 +4,10 @@ class TurboDeviseController < ApplicationController
   class Responder < ActionController::Responder
     def to_turbo_stream
       controller.render(options.merge(formats: :html))
-    # rubocop:disable Style/GuardClause
     rescue ActionView::MissingTemplate => e
-      if get?
-        # rubocop:enable Style/GuardClause
-        raise e
-      elsif has_errors? && default_action
+      raise e if get?
+
+      if has_errors? && default_action
         render rendering_options.merge(formats: :html, status: :unprocessable_entity)
       else
         redirect_to navigation_location

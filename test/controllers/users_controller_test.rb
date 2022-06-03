@@ -5,7 +5,7 @@ require 'test_helper'
 class UsersControllerTest < ActionDispatch::IntegrationTest
   setup do
     @user = users(:Jose)
-    @user = users(:one)
+    @usuario = users(:one)
     sign_in(:Jose)
   end
 
